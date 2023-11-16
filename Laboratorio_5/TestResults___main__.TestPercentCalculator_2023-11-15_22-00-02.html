@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2023-11-15 22:00:02</p>
+                <p class='attribute'><strong>Duration: </strong>69.12 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 5, Pass: 3, Error: 2</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.TestPercentCalculator</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_porcentage_1</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Éxito: La prueba ha pasado exitosamente
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_porcentage_2</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Éxito: La prueba ha pasado exitosamente
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_porcentage_3</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[3]/div[1]/p[2]/font/b"}
+  (Session info: MicrosoftEdge=119.0.2151.58); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F92125B2+60402]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6F9197302+253666]
+	(No symbol) [0x00007FF6F8F69C99]
+	(No symbol) [0x00007FF6F8FB9FD4]
+	(No symbol) [0x00007FF6F8FBA10A]
+	(No symbol) [0x00007FF6F8FF81D7]
+	(No symbol) [0x00007FF6F8FDBACF]
+	(No symbol) [0x00007FF6F8FAD766]
+	(No symbol) [0x00007FF6F8FF5111]
+	(No symbol) [0x00007FF6F8FDB863]
+	(No symbol) [0x00007FF6F8FAC585]
+	(No symbol) [0x00007FF6F8FAB993]
+	(No symbol) [0x00007FF6F8FACD14]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF6F93F3454+1161924]
+	(No symbol) [0x00007FF6F902E5F6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6F90EB083+37459]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6F90E2C4D+3613]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF6F93F2194+1157124]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6F91A1658+295480]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6F919CB24+276228]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6F919CC52+276530]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6F918FA41+222753]
+	BaseThreadInitThunk [0x00007FFBC13A7344+20]
+	RtlUserThreadStart [0x00007FFBC1AC26B1+33]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "D:\SOFTWARE_2\test.py", line 87, in test_porcentage_3
+    result = self.driver.find_element(By.XPATH, "/html/body/div[3]/div[1]/p[2]/font/b")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 741, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[3]/div[1]/p[2]/font/b"}
+  (Session info: MicrosoftEdge=119.0.2151.58); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F92125B2+60402]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6F9197302+253666]
+	(No symbol) [0x00007FF6F8F69C99]
+	(No symbol) [0x00007FF6F8FB9FD4]
+	(No symbol) [0x00007FF6F8FBA10A]
+	(No symbol) [0x00007FF6F8FF81D7]
+	(No symbol) [0x00007FF6F8FDBACF]
+	(No symbol) [0x00007FF6F8FAD766]
+	(No symbol) [0x00007FF6F8FF5111]
+	(No symbol) [0x00007FF6F8FDB863]
+	(No symbol) [0x00007FF6F8FAC585]
+	(No symbol) [0x00007FF6F8FAB993]
+	(No symbol) [0x00007FF6F8FACD14]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF6F93F3454+1161924]
+	(No symbol) [0x00007FF6F902E5F6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6F90EB083+37459]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6F90E2C4D+3613]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF6F93F2194+1157124]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6F91A1658+295480]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6F919CB24+276228]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6F919CC52+276530]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6F918FA41+222753]
+	BaseThreadInitThunk [0x00007FFBC13A7344+20]
+	RtlUserThreadStart [0x00007FFBC1AC26B1+33]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_porcentage_4</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[3]/div[1]/p[2]/font/b"}
+  (Session info: MicrosoftEdge=119.0.2151.58); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F92125B2+60402]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6F9197302+253666]
+	(No symbol) [0x00007FF6F8F69C99]
+	(No symbol) [0x00007FF6F8FB9FD4]
+	(No symbol) [0x00007FF6F8FBA10A]
+	(No symbol) [0x00007FF6F8FF81D7]
+	(No symbol) [0x00007FF6F8FDBACF]
+	(No symbol) [0x00007FF6F8FAD766]
+	(No symbol) [0x00007FF6F8FF5111]
+	(No symbol) [0x00007FF6F8FDB863]
+	(No symbol) [0x00007FF6F8FAC585]
+	(No symbol) [0x00007FF6F8FAB993]
+	(No symbol) [0x00007FF6F8FACD14]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF6F93F3454+1161924]
+	(No symbol) [0x00007FF6F902E5F6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6F90EB083+37459]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6F90E2C4D+3613]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF6F93F2194+1157124]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6F91A1658+295480]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6F919CB24+276228]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6F919CC52+276530]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6F918FA41+222753]
+	BaseThreadInitThunk [0x00007FFBC13A7344+20]
+	RtlUserThreadStart [0x00007FFBC1AC26B1+33]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "D:\SOFTWARE_2\test.py", line 116, in test_porcentage_4
+    result = self.driver.find_element(By.XPATH, "/html/body/div[3]/div[1]/p[2]/font/b")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 741, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[3]/div[1]/p[2]/font/b"}
+  (Session info: MicrosoftEdge=119.0.2151.58); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F92125B2+60402]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6F9197302+253666]
+	(No symbol) [0x00007FF6F8F69C99]
+	(No symbol) [0x00007FF6F8FB9FD4]
+	(No symbol) [0x00007FF6F8FBA10A]
+	(No symbol) [0x00007FF6F8FF81D7]
+	(No symbol) [0x00007FF6F8FDBACF]
+	(No symbol) [0x00007FF6F8FAD766]
+	(No symbol) [0x00007FF6F8FF5111]
+	(No symbol) [0x00007FF6F8FDB863]
+	(No symbol) [0x00007FF6F8FAC585]
+	(No symbol) [0x00007FF6F8FAB993]
+	(No symbol) [0x00007FF6F8FACD14]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF6F93F3454+1161924]
+	(No symbol) [0x00007FF6F902E5F6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6F90EB083+37459]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6F90E2C4D+3613]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF6F93F2194+1157124]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6F91A1658+295480]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6F919CB24+276228]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6F919CC52+276530]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6F918FA41+222753]
+	BaseThreadInitThunk [0x00007FFBC13A7344+20]
+	RtlUserThreadStart [0x00007FFBC1AC26B1+33]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_porcentage_5</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Éxito: La prueba ha pasado exitosamente
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 5, Pass: 3, Error: 2 -- Duration: 69.12 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
